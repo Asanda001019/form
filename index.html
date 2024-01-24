@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scenario</title>
+</head>
+
+<body style="background-color:rgb(205, 230, 176);">
+<h1>Please fill the form</h1>
+
+<form>
+  
+  <input type="text" id="name" placeholder="Enter your name" required>
+  <br>
+  <br>
+  
+  <input type="text" id="surname" placeholder="Enter your surname" required>
+  <br>
+  <br>  
+  
+  <input type="text" id="student_num" placeholder="Enter your student number" required>
+  <br>
+  <br>
+  
+  <input type="email" id="email" placeholder="abcdef@gmail.com" required>
+<br>
+<br>
+  
+  <input type="cellphone" id="cellphone" name="cellphone" placeholder="cellphone" required>
+  <br>
+<br>
+<h2>Gender</h2>
+  <input type="radio" name="gender" value="male" onclick="response1(this.value)"> Male
+  <input type="radio" name="gender" value="female" onclick="response2(this.value)"> Female
+  <input type="radio" name="gender" value="other" onclick="response2(this.value)"> Other  
+  <br>
+  <br>
+  <h2>Disable</h2>
+
+  <input type="radio" name="button1" value="yes" onclick="response(this.value)">yes
+  <input type="radio" name="button1" value="no" onclick="response(this.value)">No
+
+       
+ <br>
+ <br>  
+
+ <h2>Qualification</h2>
+
+ <input type="radio" name="qualification" value="degree" onclick="response2(this.value)">Degree<br>
+ <input type="radio" name="qualification" value="diploma" onclick="response2(this.value)">Diploma<br>
+ <input type="radio" name="qualification" value="degree" onclick="response2(this.value)">Higher certificate<br>
+
+
+<br> 
+<h2>Course enrolled in</h2>
+
+  <input type="radio" name="course" value="information Technology" onclick="response3(this.value)" >Information Technology<br>
+  <input type="radio" name="course" value="business analyis" onclick="response3(this.value)"> Business Analysis<br>
+<input type="radio" name="course" value="public relations" onclick="response3(this.value)"> Public Relations<br>
+<input type="radio" name="course" value="taxation" onclick="response3(this.value)"> Taxation<br>
+<input type="radio" name="course" value="drama"onclick="response3(this.value)" > Drama<br>
+  <input type="radio" name="course" value="other"onclick="response3(this.value)"> Other  
+  
+  
+  <h2>Level of study</h2>
+
+  <label for="years">Choose the year</label>
+  <select name="years" id="years">
+    <option value="First Year">First Year</option>
+    <option value="Second Year">Second Year</option>
+    <option value="Third Year">Third Year</option>
+    <option value="Fourth Year">Fourth Year</option>
+  </select>
+	<br>
+    <br>
+
+<button onclick="data()">SUBMIT</button>
+  
+  
+</form> 
+
+<script src="./index.js"></script>  
+</body>
+</html>
